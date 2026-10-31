@@ -1,0 +1,6 @@
+{
+  "name": "Kopi dan Nyemil",
+  "description": "Aplikasi pemesanan kopi dan kudapan berdasarkan wireframe Kopi dan Nyemil.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
