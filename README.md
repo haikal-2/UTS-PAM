@@ -129,7 +129,7 @@ app/src/main/
 
 ---
 
-## 🚀 Cara Menjalankan Aplikasi
+##  Cara Menjalankan Aplikasi
 
 1. **Clone repository ini:**
    ```bash
