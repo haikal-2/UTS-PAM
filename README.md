@@ -1,17 +1,17 @@
-# Kopi dan Nyemil ☕🍩
+# Kopi dan Nyemil 
 
 > **Tugas Pemrograman Mobile: Aplikasi Kopi dan Nyemil**  
 > Dibuat berdasarkan wireframe resmi alur 8 layar: *Splash/Welcome, Sign Up, Login, Register, Home, Profile, Alamat Pengiriman, dan Konfirmasi Pesanan*.
 
 ---
 
-## 📱 Tentang Aplikasi
+##  Tentang Aplikasi
 
 **Kopi dan Nyemil** adalah aplikasi mobile berbasis Android modern yang memfasilitasi pengguna untuk memesan aneka sajian kopi artisan dan kudapan nikmat secara cepat dan menyenangkan. Antarmuka aplikasi dirancang mengadopsi prinsip **Material Design 3 (M3)** dengan palet warna hangat (*Warm Coffee & Bakery Palette*: cokelat espresso, krem lembut, dan aksen terakota), memberikan kenyamanan visual dan estetika cafe modern.
 
 ---
 
-## ✨ Fitur & 8 Layar Wireframe
+##  Fitur & 8 Layar Wireframe
 
 Aplikasi mengimplementasikan 100% alur tampilan dari wireframe:
 
@@ -78,7 +78,7 @@ Aplikasi mengimplementasikan 100% alur tampilan dari wireframe:
 
 ---
 
-## 🛠️ Teknologi & Arsitektur
+##  Teknologi & Arsitektur
 
 - **Bahasa**: Kotlin (100%)
 - **UI Framework**: Jetpack Compose dengan Material 3 (M3)
@@ -89,7 +89,7 @@ Aplikasi mengimplementasikan 100% alur tampilan dari wireframe:
 
 ---
 
-## 📁 Struktur Direktori
+##  Struktur Direktori
 
 ```
 app/src/main/
@@ -144,15 +144,4 @@ app/src/main/
 
 3. **Jalankan Aplikasi:**
    - Sambungkan perangkat fisik Android melalui USB Debugging atau gunakan Android Emulator (API level 24 ke atas).
-   - Tekan tombol **Run (Shift + F10)** atau ikon hijau ▶️ pada toolbar Android Studio.
-
----
-
-## 📋 Pemenuhan Komponen Penilaian Tugas
-
-| No | Komponen Penilaian | Bobot | Status Implementasi |
-|:--:|:-------------------|:-----:|:--------------------|
-| 1 | **Kelengkapan tampilan dan fitur** | 60 poin | ✅ Lengkap 100% (8 Layar: Splash, Sign Up, Login, Register, Home, Profile, Alamat, Konfirmasi) |
-| 2 | **Tampilan/interface yang menarik** | 20 poin | ✅ Desain modern Material 3, Warm Coffee palette, feedback sentuhan, chip filter, card elevasi, dan hero illustration |
-| 3 | **Dokumentasi GitHub dan kelengkapan README** | 20 poin | ✅ Terdokumentasi lengkap dengan fitur, teknologi, struktur file, dan petunjuk instalasi |
-| **Total** | | **100 poin** | **Sempurna** |
+   - Tekan tombol **Run (Shift + F10)** atau ikon hijau  pada toolbar Android Studio.
