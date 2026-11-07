@@ -1,4 +1,4 @@
-# Kopi dan Nyemil 
+# Kopi dan Nyemil
 
 > **Tugas Pemrograman Mobile: Aplikasi Kopi dan Nyemil**  
 > Dibuat berdasarkan wireframe resmi alur 8 layar: *Splash/Welcome, Sign Up, Login, Register, Home, Profile, Alamat Pengiriman, dan Konfirmasi Pesanan*.
@@ -29,7 +29,7 @@ Aplikasi mengimplementasikan 100% alur tampilan dari wireframe:
 3. **Layar 3 — Login User**
    - Judul layar **"Login User"**
    - Kolom input `username` dan `password` (dengan toggle visibilitas sandi)
-   - Tombol **"Login"** dengan validasi kredensial
+   - Tombol **"Login"** dengan validasi kolom wajib (mode demo tanpa database)
    - Tautan cepat beralih ke halaman Registrasi jika belum memiliki akun
 
 4. **Layar 4 — Register**
@@ -129,19 +129,61 @@ app/src/main/
 
 ---
 
-##  Cara Menjalankan Aplikasi
+## Screenshot Aplikasi
+
+Berikut tampilan aplikasi pada emulator Android:
+
+| Splash / Welcome | Sign Up |
+|---|---|
+| ![Splash / Welcome](screenshots/01-splash.png) | ![Sign Up](screenshots/02-sign-up.png) |
+
+| Login | Register |
+|---|---|
+| ![Login](screenshots/03-login.png) | ![Register](screenshots/04-register.png) |
+
+| Home | Profile |
+|---|---|
+| ![Home](screenshots/05-home.png) | ![Profile](screenshots/06-profile.png) |
+
+| Alamat Pengiriman | Konfirmasi Pesanan |
+|---|---|
+| ![Alamat Pengiriman](screenshots/07-alamat.png) | ![Konfirmasi Pesanan](screenshots/08-konfirmasi.png) |
+
+---
+
+## Cara Menjalankan Aplikasi
 
 1. **Clone repository ini:**
    ```bash
-   git clone <URL_REPOSITORY_ANDA>
-   cd <NAMA_FOLDER_PROJEK>
+   git clone https://github.com/haikal-2/UTS-PAM.git
+   cd UTS-PAM
    ```
 
-2. **Buka di Android Studio:**
+2. **Siapkan signing key debug lokal (jika belum ada):**
+   Proyek memakai `debug.keystore` lokal untuk build debug. File ini diabaikan Git dan jangan diunggah ke repository. Jalankan perintah berikut satu kali dari folder proyek:
+   ```bash
+   keytool -genkeypair -v -keystore debug.keystore -storepass android -alias android -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
+   ```
+
+3. **Buka di Android Studio:**
    - Jalankan Android Studio (versi Ladybug / Flamingo / yang lebih baru).
    - Pilih **File > Open**, lalu arahkan ke direktori proyek ini.
    - Tunggu proses Gradle Sync selesai secara otomatis.
 
-3. **Jalankan Aplikasi:**
+4. **Jalankan Aplikasi:**
    - Sambungkan perangkat fisik Android melalui USB Debugging atau gunakan Android Emulator (API level 24 ke atas).
-   - Tekan tombol **Run (Shift + F10)** atau ikon hijau  pada toolbar Android Studio.
+   - Pilih konfigurasi `app`, lalu tekan tombol **Run (Shift + F10)** atau ikon hijau pada toolbar Android Studio.
+
+### Menjalankan pengujian
+
+Dengan Gradle terpasang dan Android SDK tersedia, jalankan pengujian unit dari direktori proyek:
+
+```bash
+gradle testDebugUnitTest
+```
+
+Pengujian mencakup jumlah minimum menu, perubahan profil, dan alur pembuatan pesanan.
+
+### Data demo
+
+Aplikasi tidak menggunakan database. Profil, menu, keranjang, dan pesanan disimpan sementara di memori selama aplikasi berjalan. Form login demo memeriksa agar username dan password tidak kosong; autentikasi akun sungguhan tidak diterapkan.
